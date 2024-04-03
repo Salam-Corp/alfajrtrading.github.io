@@ -336,7 +336,7 @@ gap: 2rem;
 }
 
 .container .products-container .product img{
-height: 25rem;
+height: 35rem;
 width: 90%;
 }
 
@@ -537,7 +537,7 @@ text-align: center;
  }
  
 
-/*--------------------------------------*/
+/*-------------media queries-------------------------*/
  @media (max-width:991px){
  
     html{
@@ -552,6 +552,9 @@ text-align: center;
        height: 25rem;
     }
  
+    html{
+        font-size: 45%;
+     }
  }
  
  @media (max-width:450px){
@@ -560,4 +563,10 @@ text-align: center;
        font-size: 40%;
     }
  
+ }
+
+ @media only screen and (min-width:768px) {
+    .photo-gallery {
+        width:min-content;
+    }
  }
