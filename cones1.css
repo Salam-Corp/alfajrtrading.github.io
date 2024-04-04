@@ -538,35 +538,10 @@ text-align: center;
  
 
 /*-------------media queries-------------------------*/
- @media (max-width:991px){
- 
-    html{
-       font-size: 55%;
+@media screen and (max-width:600px)
+{
+    h1{
+font-size: 36px;
+color: #000;
     }
- 
- }
- 
- @media (max-width:768px){
- 
-    .products-preview .preview img{
-       height: 25rem;
-    }
- 
-    html{
-        font-size: 45%;
-     }
- }
- 
- @media (max-width:450px){
- 
-    html{
-       font-size: 40%;
-    }
- 
- }
-
- @media only screen and (min-width:768px) {
-    .photo-gallery {
-        width:min-content;
-    }
- }
+}
