@@ -426,7 +426,19 @@ text-align: center;
      
  }
  
+.header p{
+    color: var(--color-black);
+    margin: 0 auto;
+    width:200px;
+    height: 50%;
+    background-color: #111;
+    display: flex;
+}
 
+.products-container .about-us{
+    font-size: 25px;
+    color: var(--color-black);
+}
 /*-------------media queries-------------------------*/
 @media (max-width:900px)
 {
