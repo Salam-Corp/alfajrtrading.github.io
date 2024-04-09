@@ -444,14 +444,28 @@ text-align: center;
     color: var(--color-black);
 }
 /*-------------media queries-------------------------*/
-@media (max-width:900px)
+@media (max-width:799px)
 {
  .hero-content   h1{
 font-size: 70px;
-
+    }
+    .menu-bar{
+       
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 30vh;
+        background: var(--color-black);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+      
+        transition: all .55s ease;
+        border-radius: 5px;
     }
 }
-@media  (max-width:900px){
+@media  (max-width:799px){
 .menu-bar{
     position: fixed;
     top: 0;
@@ -532,7 +546,7 @@ font-size: 45px;
     .menu-bar{
         position: fixed;
         top: 0;
-        right: 0;
+        right: -300px;
         width: 300px;
         height: 40vh;
         background: var(--color-black);
