@@ -23,9 +23,11 @@ transition: all .2s linear;
 
 html{
     font-size: 62.5%;
+   
 }
 body{
     background-color: aliceblue;
+   
 }
 /*-----menu-----*/
 .menu-bar{
@@ -368,6 +370,7 @@ margin-bottom: 8px;
      color: #fff;
      font-size: 14px;
      padding: 30px 0 10px;
+    bottom: 0;
    
  }
  .footer p{
