@@ -1,5 +1,6 @@
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
+const close = document.getElementById('close');
 
 if (bar){
   bar.addEventListener('click',() =>{
@@ -7,7 +8,11 @@ if (bar){
   })
 }
 
-
+if (close){
+  close.addEventListener('click',() =>{
+    nav.classList.remove('active'); 
+  })
+}
 
 let preveiwMenue = document.querySelector('.products-preview');
 let previewBox = preveiwMenue.querySelectorAll('.preview');
