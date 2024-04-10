@@ -1,3 +1,13 @@
+const bar = document.getElementById('bar');
+const nav = document.getElementById('navbar');
+
+if (bar){
+  bar.addEventListener('click',() =>{
+    nav.classList.add('active'); 
+  })
+}
+
+
 
 let preveiwMenue = document.querySelector('.products-preview');
 let previewBox = preveiwMenue.querySelectorAll('.preview');
