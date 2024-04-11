@@ -561,6 +561,7 @@ font-size: 45px;
     #navbar.active{
 right: 0px;
     }
+    
     .menu-bar ul {
         display: block;
         margin: 10px 0;
@@ -630,3 +631,7 @@ right: 0px;
     font-size: 24px;
 }
 }
+
+
+
+  
