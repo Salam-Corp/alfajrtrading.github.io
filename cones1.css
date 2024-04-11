@@ -44,7 +44,7 @@ body{
   
 }
 
-.logo{
+.logo a{
     color: white;
     font-size: 30px;
     cursor: pointer;
@@ -449,21 +449,7 @@ text-align: center;
  .hero-content   h1{
 font-size: 70px;
     }
-    .menu-bar{
-       
-        top: 0;
-        right: 0;
-        width: 300px;
-        height: 30vh;
-        background: var(--color-black);
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        justify-content: flex-start;
-      
-        transition: all .55s ease;
-        border-radius: 5px;
-    }
+   
 }
 @media  (max-width:799px){
 .menu-bar{
@@ -477,6 +463,7 @@ font-size: 70px;
     align-items: flex-start;
     flex-direction: column;
     padding: 50px 20px;
+    justify-content: flex-start;
     transition: all .55s ease;
     border-radius: 5px;
 }
@@ -534,10 +521,14 @@ font-size: 70px;
 }
 
 
+@media  (min-width:810px){
+    #close{
+       display: none;
+    }
+}
 
 
-
-@media  (max-width:600px)
+@media  (max-width:750px)
 {
    .hero-content h1{
 font-size: 45px;
@@ -561,7 +552,7 @@ font-size: 45px;
     #navbar.active{
 right: 0px;
     }
-    
+
     .menu-bar ul {
         display: block;
         margin: 10px 0;
@@ -625,8 +616,8 @@ right: 0px;
     }
 #close{
     position: absolute;
-    top: 10px;
-    left: 50px;
+    top: 5px;
+    left: 5px;
     color: white;
     font-size: 24px;
 }
