@@ -44,7 +44,7 @@ body{
   
 }
 
-.logo a{
+.menu-bar .logo {
     color: white;
     font-size: 30px;
     cursor: pointer;
@@ -556,7 +556,7 @@ right: 0px;
     .menu-bar ul {
         display: block;
         margin: 10px 0;
-        margin-left: 0;
+        margin-left: -30px;
         
        
     }
@@ -620,6 +620,12 @@ right: 0px;
     left: 5px;
     color: white;
     font-size: 24px;
+}
+
+@media (max-width:600px){
+    #mobile .fa-bag-shopping{
+        display: none;
+    }
 }
 }
 

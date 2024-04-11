@@ -14,6 +14,9 @@ if (close){
   })
 }
 
+
+
+
 let preveiwMenue = document.querySelector('.products-preview');
 let previewBox = preveiwMenue.querySelectorAll('.preview');
 
