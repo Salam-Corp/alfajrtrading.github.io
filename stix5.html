@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cones3.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<div class="deet">
+    <div class="detcard">
+          
+        <input type="radio" name="deets"  onclick="changeText()">small
+        <input type="radio" name="deets"  onclick="revertText()">large
+        <h2 id="demo" class="fold">5.00</h2>
+    </div>
+</div>
+
+<div id="container">
+  
+       
+        <select id="framework">
+            <option value="2">small</option>
+            <option value="5.00">med</option>
+            <option value="10.00">larges</option>
+            <option>Ember.js</option>
+        </select>
+        <button id="btn">Get the Selected Value</button>
+</div>
+
+
+<button  onclick="one()">click</button>
+ 
+
+                    <script>
+//----------------------
+
+function one(){
+    console.log('one')
+}
+
+function two() {
+    console.log('two')
+};
+//---------------
+  const btn = document.querySelector('#btn');
+        const sb = document.querySelector('#framework')
+        btn.onclick = (event) => {
+            event.preventDefault();
+            alert(sb.value);
+        };
+
+
+                        let menu = document.getElementById("demo");
+                        let items = document.getElementsByClassName("fold")
+        function changeText(){
+            document.getElementById("demo").innerHTML="5.00";
+        }
+
+        function revertText(){
+            document.getElementById("demo").innerHTML="10.00";
+        }
+
+
+//--------------------------------
+
+
+                        let buttons = document.querySelectorAll('button');
+                        let modals = document.querySelectorAll('.modal');
+                        
+                        function showModal(id) {
+                          let m = document.getElementById(id);
+                         m.classList.add('visible');
+                        }
+                        
+                        function hideModals() {
+                          modals.forEach(m => {
+                            m.classList.remove('visible');
+                          });
+                        }
+                        
+                        buttons.forEach(b => {
+                          b.addEventListener('click', event => {
+                            hideModals();
+                            showModal(b.dataset.modal);
+                          });
+                        });
+
+                            </script>                  
+</body>
+</html> 

@@ -39,3 +39,13 @@ previewBox.forEach(close =>{
     preveiwMenue.style.display = 'none';
   };
 });
+
+
+
+
+/*---------modal---------*/
+
+   
+
+
+  
