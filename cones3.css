@@ -200,9 +200,10 @@ cursor: pointer;
 }
 
 .container .products-container .product img{
-height:35rem;
+height:50rem;
 width: 90%;
 cursor: pointer;
+
 }
 
 .container .products-container .product:hover img{
