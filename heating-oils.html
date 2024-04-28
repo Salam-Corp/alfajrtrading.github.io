@@ -1,194 +1,313 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oil Diffusers</title>
-    <script src="js/styles.js" defer></script>
-    <link rel="stylesheet" href="cones1.css">
+    <title>Heating Oil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="cones3.css">
 </head>
 <body>
- 
-
-
-<div class="product-container">
-    <h2 class="product-title">Heating Oils</h2>  
-   </div>
-  
-   
-   <div class="container">
-
-    <h3 class="title"> organic products </h3>
- 
+    <div class="menu-bar" id="navbar" >
+        <div class="logobox">
+            <a href="index.html"><h1 class="logo">Al<span>Fajr</span></h1>
+            </a>
+        </div>
+        
+        <ul>
+            <li><a href="index.html">Home</a></li>
+           
+            
+             <li><a href="Products.html">Products <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                    <li><a  href="stix.html">Incense <i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-menu-1">
+                            <ul>
+                                <li><a class="active" href="stix.html">Small Sticks</a> </li>
+                                <li><a  href="lgsticks.html">Large Sticks</a> </li>
+                                <li><a href="cones.html">Cones</a> </li>
+                                <li><a href="imported.html">Imported</a> </li>
+                            </ul>
+                        </div>
+                        </li>
+                    <li><a href="#">Smokeless<i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-menu-1">
+                            <ul>
+                                <li><a href="sprays.html">Air Freshener Sprays</a> </li>
+                                <li><a class="active" href="heating-oils.html">Heating Oils</a> </li>
+                                <li><a href="OilDiffusers.html">Diffusers</a> </li>
+                                <li><a href="Seasonal.html">Seasonal</a> </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li><a href="#">Burners<i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-menu-1">
+                            <ul>
+                                <li><a href="incenseHolders.html">Incense Holders</a> </li>
+                                <li><a href="#">Oil Burners</a> </li>
+                                <li><a href="#">Diffuser Oils</a> </li>
+                               
+                            </ul>
+                        </div> 
+                    </li>
+    
+                    <li><a href="#">Hair & Body<i class="fas fa-caret-right"></i></a>
+                        <div class="dropdown-menu-1">
+                            <ul>
+                                <li><a href="soapsandShampoos.html">Soaps</a> </li>
+                                <li><a href="soapsandShampoos.html">Shampoos</a> </li>
+                                <li><a href="cremesandLotions.html">Cremes & Lotions</a> </li>
+                                <li><a href="#">Body Oils</a> </li>
+                            </ul>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </li>
+       <li><a href="aboutalfajr.html">About</a></li>
+       <li><a href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+       <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
+    </ul>
+    </div>  
+    <div id="mobile">
+        <a href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+    
+<div class="container">
+    <h3 class="title">Heating Oils</h3>
     <div class="products-container">
- 
-       <div class="product" data-name="p-1">
-          <img src="/alfajr/images/20231006_124227.jpg" alt="">
-          <h3>strawberries</h3>
-          <div class="price">$2.00</div>
-       </div>
- 
-       <div class="product" data-name="p-2">
-          <img src="images/2.png" alt="">
-          <h3>onions</h3>
-          <div class="price">$2.00</div>
-       </div>
- 
-       <div class="product" data-name="p-3">
-          <img src="images/3.png" alt="">
-          <h3>tomatoes</h3>
-          <div class="price">$2.00</div>
-       </div>
- 
-       <div class="product" data-name="p-4">
-          <img src="images/4.png" alt="">
-          <h3>brinjal</h3>
-          <div class="price">$2.00</div>
-       </div>
- 
-       <div class="product" data-name="p-5">
-          <img src="images/5.png" alt="">
-          <h3>broccoli</h3>
-          <div class="price">$2.00</div>
-       </div>
- 
-       <div class="product" data-name="p-6">
-          <img src="images/6.png" alt="">
-          <h3>potatoes</h3>
-          <div class="price">$2.00</div>
-       </div>
- 
-    </div>
- 
- </div>
- 
- <div class="products-preview">
- 
-    <div class="preview" data-target="p-1">
-       <i class="fas fa-times"></i>
-       <img src="images/1.png" alt="">
-       <h3>organic strawberries</h3>
-       <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <span>( 250 )</span>
-       </div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-       <div class="price">$2.00</div>
-       <div class="buttons">
-          <a href="#" class="buy">buy now</a>
-          <a href="#" class="cart">add to cart</a>
-       </div>
-    </div>
- 
-    <div class="preview" data-target="p-2">
-       <i class="fas fa-times"></i>
-       <img src="images/2.png" alt="">
-       <h3>organic onions</h3>
-       <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <span>( 250 )</span>
-       </div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-       <div class="price">$2.00</div>
-       <div class="buttons">
-          <a href="#" class="buy">buy now</a>
-          <a href="#" class="cart">add to cart</a>
-       </div>
-    </div>
- 
-    <div class="preview" data-target="p-3">
-       <i class="fas fa-times"></i>
-       <img src="images/3.png" alt="">
-       <h3>organic tomatoes</h3>
-       <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <span>( 250 )</span>
-       </div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-       <div class="price">$2.00</div>
-       <div class="buttons">
-          <a href="#" class="buy">buy now</a>
-          <a href="#" class="cart">add to cart</a>
-       </div>
-    </div>
- 
-    <div class="preview" data-target="p-4">
-       <i class="fas fa-times"></i>
-       <img src="images/4.png" alt="">
-       <h3>organic brinjal</h3>
-       <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <span>( 250 )</span>
-       </div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-       <div class="price">$2.00</div>
-       <div class="buttons">
-          <a href="#" class="buy">buy now</a>
-          <a href="#" class="cart">add to cart</a>
-       </div>
-    </div>
- 
-    <div class="preview" data-target="p-5">
-       <i class="fas fa-times"></i>
-       <img src="images/5.png" alt="">
-       <h3>organic broccoli</h3>
-       <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <span>( 250 )</span>
-       </div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-       <div class="price">$2.00</div>
-       <div class="buttons">
-          <a href="#" class="buy">buy now</a>
-          <a href="#" class="cart">add to cart</a>
-       </div>
-    </div>
- 
-    <div class="preview" data-target="p-6">
-       <i class="fas fa-times"></i>
-       <img src="images/6.png" alt="">
-       <h3>organic potatoes</h3>
-       <div class="stars">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <span>( 250 )</span>
-       </div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-       <div class="price">$2.00</div>
-       <div class="buttons">
-          <a href="#" class="buy">buy now</a>
-          <a href="#" class="cart">add to cart</a>
-       </div>
-    </div>
- 
- </div>
-   
-                   
-</body>
-</html>   
+       
+        <div class="product"> <button data-modal="acinnamon">  
+            <img src="" alt="">
+            <h3>Apple Cinnamon</h3></button>
+              </div>
+    
+              <div class="product"> <button data-modal="bbutter">  
+                <img src="" alt="">
+                <h3>Black Butter</h3></button>
+                  </div>
 
+                  <div class="product"> <button data-modal="coconut">  
+                    <img src="" alt="">
+                    <h3>Coconut</h3></button>
+                      </div>
+                      
+                  <div class="product"> <button data-modal="dblood">  
+                    <img src="" alt="">
+                    <h3>Dragon's Blood</h3></button>
+                      </div>
+            
+                      <div class="product"> <button data-modal="emusk">  
+                        <img src="" alt="">
+                        <h3>Egyptian Musk</h3></button>
+                          </div>     
+
+                          <div class="product"> <button data-modal="fandm">  
+                            <img src="" alt="">
+                            <h3>Frankenscense & Myrrh</h3></button>
+                              </div>
+                    
+                              <div class="product"> <button data-modal="lavender">  
+                                <img src="" alt="">
+                                <h3>Lavender</h3></button>
+                                  </div>
+                
+                                  <div class="product"> <button data-modal="Lemongrass">  
+                                        <img src="images/diffuser oil.jpg" alt="">
+                                    
+                                    <h3>Lemongrass</h3></button>
+                                      </div>
+                            
+                                      <div class="product"> <button data-modal="Love">  
+                                        <img src="images/diffuser oil.jpg" alt="">
+                                        <h3>Love</h3></button>
+                                          </div>
+                
+
+
+    </div>
+   
+</div>
+ 
+       
+       
+   
+      
+      <div class="modal" id="acinnamon">
+        <div class="preview" >
+            <img src="/images/20231006_124227.jpg" alt="">
+            <h3>Apple Cinnamon</h3>
+           <h4>$5.00</h4>  
+           <p>A bright blend of freshly cut apples and exotic cinnamon!</p>
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+      
+    
+    <div class="modal" id="bbutter">
+        <div class="preview" >
+            <img src="images/20231120_173522.jpg" alt="">
+            <h3>Black butter</h3>
+            <h4>$5.00</h4>  
+            <p>Rich and Buttery with notes of vanilla.</p>
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+      
+    <div class="modal" id="coconut">
+        <div class="preview" >
+            <img src="images/20231120_173516.jpg" alt="">
+            <h3>Coconut</h3>
+            <h4>$5.00</h4>
+            <p>Coconut.  You know what it smells like.</p>
+          
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+      
+    <div class="modal" id="dblood">
+        <div class="preview" >
+            <img src="images/20231120_173522.jpg" alt="">
+            <h3>Dragon's Blood</h3>
+            <h4>$5.00</h4>
+            <p>If a dragon ate a bunch of flowers and you slit its throat and bathed in its blood. </p>
+           
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="modal" id="emusk">
+        <div class="preview" >
+            <img src="images/Opium-sticks.jpg" alt="">
+            <h3>Egyptian Musk</h3>
+            <h4>$5.00</h4>
+            <p>A classic Blend </p>
+           
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="fandm">
+        <div class="preview" >
+            <img src="images/20231006_124344.jpg" alt="">
+            <h3>Frankenscence & Myrrh</h3>
+            <h4>$5.00</h4>
+            <p>2 out of 3 Wise Men recommend. </p>
+            
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="lavender">
+        <div class="preview" >
+            <img src="images/Strawberry-Sticks.jpg" alt="">
+            <h3>Lavender</h3>
+            <h4>$5.00</h4>
+            <p>Jubilant lavenger fragrant and soapy. </p>
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Lemongrass">
+        <div class="preview" >
+            <img src="images/Lemongrass-Sticks.jpg" alt="">
+            <h3>Lemongrass</h3>
+            <h4>$5.00</h4>
+            <p>It smells good. Like really good. </p>  
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="Love">
+        <div class="preview" >
+            <img src="images/Love-Sticks.jpg" alt="">
+            <h3>Love</h3>
+            <h4>$5.00</h4>
+            <p>Our best-selling fragrance until Lemongrass came along. </p>
+           
+    <span><p>Qty:</p></span>
+    <input type="number" value="1">
+            <div class="buttons">
+                <a href="" class="close-win">Close</a>
+                <a href="Cart.html" class="cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    
+     <!-----footer-->
+
+ <footer class="footer">
+    <div class="footer-col">
+        <h4>Visit Us</h4>
+       <p>Al Fajr Trading Co.</p><br>
+       <p>1126 Oak Street</p><br>
+       <p>Atlanta, Ga. 30318 </p> 
   
+    </div>
+    
+    <div class="footer-col">
+        <a href="index.html"><h1 class="logo">Al<span>Fajr</span></h1></a>
+    
+    </div>
+
+    <div class="footer-col">
+        <h4>Stay in Touch</h4>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Ebay</a></li>
+        </ul>
+    </div>
+</footer>  
+    <script src="cones1.js">
+  
+    </script>
+      
+    
+</body>
+</html>
