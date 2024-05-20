@@ -1,34 +1,4 @@
 
-
-
-
-const buttons = document.querySelectorAll('button');
-let modals = document.querySelectorAll('.modal');
-
-function showModal(id) {
-  let m = document.getElementById(id);
-  m.classList.add('visible');
-}
-
-function hideModals() {
-  modals.forEach(m => {
-    m.classList.remove('visible');
-  });
-}
-
-buttons.forEach(b => {
-  b.addEventListener('click', event => {
-    hideModals();
-    showModal(b.dataset.modal);
-  });
-});
-
-
-
-
-
-
-
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
 const close = document.getElementById('close');
@@ -47,40 +17,55 @@ if (close){
 
 
 
-//-------size adjustment radio buttons
-let radioBtns = document.querySelectorAll
-("input[name='fruit']");
-let result = document.getElementById("result");
+function toggle() {
+  var hideWindow = document.querySelector(".cart");
 
-let findSelected = () => {
-  let selected = document.querySelector
-  ("input[name='fruit']:checked").value;
-result.textContent = `Price: ${selected}`;
+  if(hideWindow.style.display === "none") {
+    hideWindow.style.display = "block";
+  }
+  else{
+    hideWindow.style.display = "none";
+  }
 }
 
-radioBtns.forEach(radioBtn => {
-  radioBtn.addEventListener("change", 
-findSelected);
-});
-
-findSelected();
 
 
 
 
 
-//------modals.forEach(m => {
-  //let x = m.querySelector('button.close');
- // x.addEventListener('click', hideModals);
-//}); 
-
-//--------------
-
-
+// SELECT ELEMENTS
+const productsEl = document.querySelector(".products");
 const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
+// RENDER PRODUCTS
+function renderProdcuts() {
+  products.forEach((product) => {
+    productsEl.innerHTML += `
+    <div class="product">  
+    <img src="${product.imgSrc}" alt="${product.name}">
+    <h3>${product.name}</h3>
+    <h4>${product.price} <h4>
+    <div class="add-to-cart" onclick="addToCart(${product.id})">
+    <button alt="add to cart">Add</button>
+        <a href="#${product.id}" class="prod-info">Info</a>
+    </div>
+      </div>
+   
+      <div id="${product.id}" class="modalDialog">
+      <div>
+          <a href="#close" title="Close" class="close">X</a>
+          <h2>${product.name}</h2>
+          <img src="${product.imgSrc}" alt="" width="150px">
+        
+          <p>${product.description}</p>
+      </div>
+      </div>
+        `;
+  });
+}
+renderProdcuts();
 
 // cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -178,3 +163,14 @@ function changeNumberOfUnits(action, id) {
   updateCart();
 }
 
+
+function toggle() {
+  var hideWindow = document.querySelector(".cart");
+
+  if(hideWindow.style.display === "none") {
+    hideWindow.style.display = "block";
+  }
+  else{
+    hideWindow.style.display = "none";
+  }
+}
