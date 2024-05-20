@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burners</title>
-    <link rel="stylesheet" href="about1.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="cones3.css">
 </head>
 <body>
-    <div class="menu-bar">
-        <a href="index.html">
-            <h1 class="logo" >Al<span>Fajr</span></h1>
+    <div class="menu-bar" id="navbar" >
+        <div class="logobox">
+            <a href="index.html"><h1 class="logo">Al<span>Fajr</span></h1>
+            </a>
+        </div>
         
-        </a>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
            
             
              <li><a href="Products.html">Products <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-menu">
                 <ul>
-                    <li><a href="stix.html">Incense <i class="fas fa-caret-right"></i></a>
+                    <li><a class="active" href="stix.html">Incense <i class="fas fa-caret-right"></i></a>
                         <div class="dropdown-menu-1">
                             <ul>
                                 <li><a href="stix.html">Small Sticks</a> </li>
-                                <li><a href="stix.html">Large Sticks</a> </li>
+                                <li><a  href="lgsticks.html">Large Sticks</a> </li>
                                 <li><a href="cones.html">Cones</a> </li>
                                 <li><a href="imported.html">Imported</a> </li>
                             </ul>
                         </div>
                         </li>
-                    <li><a href="smokeless.html">Smokeless<i class="fas fa-caret-right"></i></a>
+                    <li><a href="#">Smokeless<i class="fas fa-caret-right"></i></a>
                         <div class="dropdown-menu-1">
                             <ul>
                                 <li><a href="sprays.html">Air Freshener Sprays</a> </li>
@@ -39,11 +42,11 @@
                             </ul>
                         </div> 
                     </li>
-                    <li><a class="active" href="#">Burners<i class="fas fa-caret-right"></i></a>
+                    <li><a href="#">Burners<i class="fas fa-caret-right"></i></a>
                         <div class="dropdown-menu-1">
                             <ul>
                                 <li><a href="incenseHolders.html">Incense Holders</a> </li>
-                                <li><a href="#">Oil Burners</a> </li>
+                                <li><a class="active" href="#">Oil Burners</a> </li>
                                 <li><a href="#">Diffuser Oils</a> </li>
                                
                             </ul>
@@ -63,15 +66,84 @@
                 </ul>
             </div>
         </li>
-       <li><a  href="about3.html">About</a></li>
-       <li><a href="contact.html">Contact</a></li>
+       <li><a href="aboutalfajr.html">About</a></li>
+       <div class="shopping-bag">
+            <div class="total-items-in-cart" onclick="toggle()">
+                0
+            </div>
+     
+       <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
     </ul>
-    </div>   
+    </div>  
+    <div id="mobile">
+        <a href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+    
+<div class="container">
+    <h3 class="title">Traditional <br> Small Incense</h3>
+    <div class="products-container">
+       
+       <!----render products----->
+    
+          
 
-    <div class="product-container">
-        <h1 class="product-title">Burners</h1> 
-       </div>
+    </div>
+</div>
+ 
+<div class="cart">
+    <div class="cart-header">
+        <div class="column1">Item</div>
+        <div class="column2">Unit price</div>
+        <div class="column3">Units</div>
+    </div>
+    <div class="cart-items">
+        <!-- render cart items here -->
+    </div>
+    <div class="cart-footer">
+        <div class="subtotal">
+            Subtotal (0 items): $0
+        </div>
+        <div class="checkout">
+            Proceed to checkout
+        </div>
+    </div>
+</div>
+</div>     
+       
+   
       
+    
+     <!-----footer-->
 
+ <footer class="footer">
+    <div class="footer-col">
+        <h4>Visit Us</h4>
+       <p>Al Fajr Trading Co.</p><br>
+       <p>1126 Oak Street</p><br>
+       <p>Atlanta, Ga. 30318 </p> 
+  
+    </div>
+    
+    <div class="footer-col">
+        <a href="index.html"><h1 class="logo">Al<span>Fajr</span></h1></a>
+    
+    </div>
+
+    <div class="footer-col">
+        <h4>Stay in Touch</h4>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Ebay</a></li>
+        </ul>
+    </div>
+</footer>  
+<script src="products.js"></script>
+    <script src="papps.js">
+  
+    </script>
+      
+    
 </body>
 </html>

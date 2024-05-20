@@ -23,7 +23,7 @@
              <li><a href="Products.html">Products <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-menu">
                 <ul>
-                    <li><a class="active" href="stix.html">Incense <i class="fas fa-caret-right"></i></a>
+                    <li><a  href="#">Incense <i class="fas fa-caret-right"></i></a>
                         <div class="dropdown-menu-1">
                             <ul>
                                 <li><a  href="stix.html">Small Sticks</a> </li>
@@ -68,204 +68,87 @@
             </div>
         </li>
        <li><a href="aboutalfajr.html">About</a></li>
-       <li><a href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+       <div class="shopping-bag">
+        <div class="total-items-in-cart" onclick="toggle()" >
+            0
+           
+        </div>
+       </div>
+       
+        
        <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
     </ul>
     </div>  
     <div id="mobile">
-        <a href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        
         <i id="bar" class="fa-solid fa-bars"></i>
     </div>
     
-<div class="container">
-    <h3 class="title">Air Freshener Sprays</h3>
-    <div class="products-container">
-       
-        <div class="product"> <button data-modal="acinnamon">  
-            <img src="images/Love-Spray.jpg" alt="">
-            <h3>Apple Cinnamon</h3></button>
-              </div>
-    
-              <div class="product"> <button data-modal="bbutter">  
-                <img src="images/BlackButter-Spray.jpg" alt="">
-                <h3>Black Butter</h3></button>
-                  </div>
-            
-                      <div class="product"> <button data-modal="emusk">  
-                        <img src="images/PassionFruit-Spray.jpg" alt="">
-                        <h3>Egyptian Musk</h3></button>
-                          </div>     
 
-                          <div class="product"> <button data-modal="fandm">  
-                            <img src="images/Love-Spray.jpg" alt="">
-                            <h3>Frankenscense & Myrrh</h3></button>
-                              </div>
-                    
-                              <div class="product"> <button data-modal="lavender">  
-                                <img src="images/Strawberry-Spray.jpg" alt="">
-                                <h3>Lavender</h3></button>
-                                  </div>
-                
-                                  <div class="product"> <button data-modal="Lemongrass">  
-                                    <img src="images/PineSpray.jpg" alt="">
-                                    <h3>Lemongrass</h3></button>
-                                      </div>
-                            
-                                      <div class="product"> <button data-modal="Love">  
-                                        <img src="images/Love-Spray.jpg" alt="">
-                                        <h3>Love</h3></button>
-                                          </div>
-                
-
-
-    </div>
-   
-</div>
- 
-       
-       
-   
-      
-      <div class="modal" id="acinnamon">
-        <div class="preview" >
-            <img src="images/Love-Spray.jpg" alt="">
-            <h3>Apple Cinnamon</h3>
-           <h4>$5.00</h4>  
-           <p>A bright blend of freshly cut apples and exotic cinnamon!</p>
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-      
-    
-    <div class="modal" id="bbutter">
-        <div class="preview" >
-            <img src="images/BlackButter-Spray.jpg" alt="">
-            <h3>Black butter</h3>
-            <h4>$5.00</h4>  
-            <p>Rich and Buttery with notes of vanilla.</p>
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-      
-
-
-    
-    <div class="modal" id="emusk">
-        <div class="preview" >
-            <img src="images/Love-Spray.jpg" alt="">
-            <h3>Egyptian Musk</h3>
-            <h4>$5.00</h4>
-            <p>A classic Blend </p>
+    <div class="container">
+        <h3 class="title">Air Freshener<br> Sprays</h3>
+        <div class="products-container">
            
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
+           <!----render products----->
+        
+              
+    
+        </div>
+    </div>
+     
+    <div class="cart">
+        <div class="cart-header">
+            <div class="column1">Item</div>
+            <div class="column2">Unit price</div>
+            <div class="column3">Units</div>
+        </div>
+        <div class="cart-items">
+            <!-- render cart items here -->
+        </div>
+        <div class="cart-footer">
+            <div class="subtotal">
+                Subtotal (0 items): $0
+            </div>
+            <div class="checkout">
+                Proceed to checkout
             </div>
         </div>
     </div>
-
-    <div class="modal" id="fandm">
-        <div class="preview" >
-            <img src="images/PassionFruit-Spray.jpg" alt="">
-            <h3>Frankenscence & Myrrh</h3>
-            <h4>$5.00</h4>
-            <p>2 out of 3 Wise Men recommend. </p>
-            
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="lavender">
-        <div class="preview" >
-            <img src="images/Strawberry-Spray.jpg" alt="">
-            <h3>Lavender</h3>
-            <h4>$5.00</h4>
-            <p>Jubilant lavenger fragrant and soapy. </p>
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="Lemongrass">
-        <div class="preview" >
-            <img src="images/PineSpray.jpg" alt="">
-            <h3>Lemongrass</h3>
-            <h4>$5.00</h4>
-            <p>It smells good. Like really good. </p>  
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="Love">
-        <div class="preview" >
-            <img src="images/Love-Spray.jpg" alt="">
-            <h3>Love</h3>
-            <h4>$5.00</h4>
-            <p>Our best-selling fragrance until Lemongrass came along. </p>
+    </div>     
            
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
+       
+          
+        
+         <!-----footer-->
+    
+     <footer class="footer">
+        <div class="footer-col">
+            <h4>Visit Us</h4>
+           <p>Al Fajr Trading Co.</p><br>
+           <p>1126 Oak Street</p><br>
+           <p>Atlanta, Ga. 30318 </p> 
+      
         </div>
-    </div>
+        
+        <div class="footer-col">
+            <a href="index.html"><h1 class="logo">Al<span>Fajr</span></h1></a>
+        
+        </div>
     
-     <!-----footer-->
-
- <footer class="footer">
-    <div class="footer-col">
-        <h4>Visit Us</h4>
-       <p>Al Fajr Trading Co.</p><br>
-       <p>1126 Oak Street</p><br>
-       <p>Atlanta, Ga. 30318 </p> 
+        <div class="footer-col">
+            <h4>Stay in Touch</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Ebay</a></li>
+            </ul>
+        </div>
+    </footer>  
+    <script src="products-spray.js"></script>
+        <script src="papps.js">  </script>
+          
+        
   
-    </div>
-    
-    <div class="footer-col">
-        <a href="index.html"><h1 class="logo">Al<span>Fajr</span></h1></a>
-    
-    </div>
-
-    <div class="footer-col">
-        <h4>Stay in Touch</h4>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Ebay</a></li>
-        </ul>
-    </div>
-</footer>  
-    <script src="cones1.js">
-  
-    </script>
       
     
 </body>

@@ -67,7 +67,12 @@
             </div>
         </li>
        <li><a href="aboutalfajr.html">About</a></li>
-       <li><a href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+       <div class="shopping-bag">
+        <div class="total-items-in-cart" onclick="toggle()" >
+            0
+           
+        </div>
+       </div>
        <a href="#" id="close"><i class="fa-solid fa-circle-xmark"></i></a>
     </ul>
     </div>  
@@ -131,152 +136,27 @@
    
 </div>
  
-       
+<div class="cart">
+    <div class="cart-header">
+        <div class="column1">Item</div>
+        <div class="column2">Unit price</div>
+        <div class="column3">Units</div>
+    </div>
+    <div class="cart-items">
+        <!-- render cart items here -->
+    </div>
+    <div class="cart-footer">
+        <div class="subtotal">
+            Subtotal (0 items): $0
+        </div>
+        <div class="checkout">
+            Proceed to checkout
+        </div>
+    </div>
+</div>
+</div>       
        
    
-      
-      <div class="modal" id="nag">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Apple Cinnamon</h3>
-           <h4>$5.00</h4>  
-           <p>A bright blend of freshly cut apples and exotic cinnamon!</p>
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-      
-    
-    <div class="modal" id="rose">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Black butter</h3>
-            <h4>$5.00</h4>  
-            <p>Rich and Buttery with notes of vanilla.</p>
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-      
-    <div class="modal" id="coconut">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Coconut</h3>
-            <h4>$5.00</h4>
-            <p>Coconut.  You know what it smells like.</p>
-          
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-      
-    <div class="modal" id="dblood">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Dragon's Blood</h3>
-            <h4>$5.00</h4>
-            <p>If a dragon ate a bunch of flowers and you slit its throat and bathed in its blood. </p>
-           
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-
-    
-    <div class="modal" id="supemusk">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Superior Egyptian Musk</h3>
-            <h4>$5.00</h4>
-            <p>A classic Blend </p>
-           
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="images/aroma-21553_1280.jpg" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="fandm">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Frankenscence & Myrrh</h3>
-            <h4>$5.00</h4>
-            <p>2 out of 3 Wise Men recommend. </p>
-            
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="lavender">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Lavender</h3>
-            <h4>$5.00</h4>
-            <p>Jubilant lavenger fragrant and soapy. </p>
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="Lemongrass">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Lemongrass</h3>
-            <h4>$5.00</h4>
-            <p>It smells good. Like really good. </p>  
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="Love">
-        <div class="preview" >
-            <img src="images/aroma-21553_1280.jpg" alt="">
-            <h3>Love</h3>
-            <h4>$5.00</h4>
-            <p>Our best-selling fragrance until Lemongrass came along. </p>
-           
-    <span><p>Qty:</p></span>
-    <input type="number" value="1">
-            <div class="buttons">
-                <a href="" class="close-win">Close</a>
-                <a href="Cart.html" class="cart">Add to Cart</a>
-            </div>
-        </div>
-    </div>
     
      <!-----footer-->
 
@@ -303,10 +183,9 @@
         </ul>
     </div>
 </footer>  
-    <script src="cones1.js">
-  
-    </script>
-      
+   
+<script src="products-spray.js"></script>
+<script src="papps.js">  </script>  
     
 </body>
 </html>
