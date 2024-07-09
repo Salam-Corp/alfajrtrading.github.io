@@ -605,12 +605,12 @@ text-align: center;
  .footer ul{
      display: flex;
      flex-direction: column;
-     padding: 25px;
-     margin-top: 15px;
+   
+     
  }
    
  .footer ul li {
-    margin: 10px 0;
+  margin: 5px 0;
   }
   
   .footer ul li a{
